@@ -7,7 +7,7 @@
 * Return: 1 if true, 0 if false
 */
 
-int islower(char c)
+int isLower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
@@ -17,6 +17,7 @@ int islower(char c)
  * @c: charachter
  * Return: 1if true, 0 if false
  */
+
 int isDelimiter(char c)
 {
 	int i;
