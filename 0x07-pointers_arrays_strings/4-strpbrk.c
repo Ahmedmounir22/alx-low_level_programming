@@ -31,4 +31,3 @@ char *_strpbrk(chae *s, char *accept)
 
 	return (0);
 }
-
