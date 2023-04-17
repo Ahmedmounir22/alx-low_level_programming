@@ -2,13 +2,15 @@
 
 /**
  * _strpbrk - search a string for any of a set bytes
+ *
  * @s: string
  * @accept: string to match
+ *
  * Return: pointer to the byte in a that matches one of the bytes in accept
  * of NULL if no such byte is found
  */
 
-char *_strpbrk(chae *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int a, b;
 	char *p;
