@@ -47,3 +47,15 @@ int op_div(int a, int b)
 {
 	return (a / b);
 }
+
+/**
+ * op_mod - modulo two integers
+ * @a: the first int
+ * @b: the second int
+ *
+ * Return: the remainder
+ */
+int op_mod(int a, int b)
+{
+	return (a % b);
+}
