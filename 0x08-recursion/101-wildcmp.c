@@ -36,10 +36,10 @@ int inception(char *s1, char *s2)
 /**
  * wildcmp - compares two strings lexicorgraphically
  * @s1: the first string
- * @c2: input
+ * @s2: input
  * Return: 1 if identical, 0 if false
  */
-int wildcmp(char *s1, char *c2)
+int wildcmp(char *s1, char *s2)
 {
 	int ret = 0;
 
