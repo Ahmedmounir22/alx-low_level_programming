@@ -7,7 +7,7 @@
  *		integer is a prime number, otherwise return 0.
  *
  * @n: input
- *
+ * @other: input
  * Return: integer
  */
 int check_prime(int n, int other);
