@@ -5,7 +5,8 @@
  *			and initializes it with a specific char
  * @size: input
  * @c: input
- * Return: Returns NULL if size = 0,Returns a pointer to the array, or NULL if it fails
+ * Return: Returns NULL if size = 0,
+ * Returns a pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
@@ -13,7 +14,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0 || n == 0)
 		return (0);
-	
+
 	while (size--)
 		n[size] = c;
 
