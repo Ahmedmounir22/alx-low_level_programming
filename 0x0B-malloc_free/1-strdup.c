@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * *_strdup - a function that returns a pointer to a newly allocated space in memory
+ * *_strdup - a function that returns a pointer
+ *		to a newly allocated space in memory
  * @str: input
  * Return: 0
  */
@@ -22,6 +23,7 @@ char *_strdup(char *str)
 
 	if (m == 0)
 		return (NULL);
+
 	else
 	{
 		for (; i < size; i++)
