@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * _strlen - a function
@@ -14,7 +14,7 @@ int _strlen(const char *str)
 	int length = 0;
 
 	while (*str++)
-	length++;
+		length++;
 	return (length);
 }
 
