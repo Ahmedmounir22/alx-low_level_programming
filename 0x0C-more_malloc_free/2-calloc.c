@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * *_memset - fills memory with a constant byte
  * @s: input
@@ -28,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *a;
 
-	if (size == 0 || nemb == 0)
+	if (size == 0 || nmemb == 0)
 		return (NULL);
 	a = malloc(sizeof(int) * nmemb);
 
