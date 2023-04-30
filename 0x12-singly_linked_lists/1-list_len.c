@@ -8,8 +8,8 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t count = 0; 
-	
+	size_t count = 0;
+
 	/* counter variable to keep track of number of nodes */
 	while (h != NULL)
 	{
