@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 	va_list ap;
 
-	if (!in)
+	if (!n)
 	{
 		printf("\n");
 		return;
