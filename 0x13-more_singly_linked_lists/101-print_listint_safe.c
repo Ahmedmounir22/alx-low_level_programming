@@ -1,33 +1,6 @@
 #include "lists.h"
-#include <stdlib.h>
 #include <stdio.h>
-
-/**
- * _r - reallocates memory for an array
- * @list: input
- * @size: input
- * @new: input
- *
- * Return: pointer to the new list
- */
-
-const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
-{
-	const listint_t **newlist;
-	size_t i;
-
-	newlist = malloc(size * sizeof(listint_t *));
-	if (newlist == NULL)
-	{
-		free(list);
-		exit(98);
-	}
-	for (i = 0; i < size - 1; i++)
-		newlist[i] = list[i];
-	newlist[i] = new;
-	free(list);
-	return (newlist);
-}
+#include <stdlib.h>
 
 /**
  * print_listint_safe - Prints a listint_t linked list.
@@ -37,25 +10,21 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t i, num = 0;
-	const listint_t  **list = NULL;
+	size_t count = 0;
+	const listint_t *current_node = head, *temp_node;
 
-	while (head != NULL)
+	while (current_node != NULL)
 	{
-		for (i = 0; i < num; i++)
+		printf("[%p] %d\n", (void *)current_node, current_node->n);
+		count++;
+		temp_node = current_node;
+		current_node = current_node->next;
+		if (temp_node <= current_node)
 		{
-			if (head == list[i])
-			{
-				printf("-> [%p] %d\n", (void *)head, head->n);
-				free(list);
-				return (num);
-			}
+			printf("-> [%p] %d\n", (void *)current_node, current_node->n);
+			exit(98);
 		}
-		num++;
-		list = _r(list, num, head);
-		printf("[%p] %d\n", (void)head, head->n);
-		head = head->next;
 	}
-	free(list);
-	return (num);
+
+	return (count);
 }
