@@ -5,7 +5,7 @@
  * @head: A pointer to the head of the listint_t list.
 */
 
-void free_listint(listint_t *head)
+void free_listint2(listint_t *head)
 {
 	listint_t *node, *temp;
 
