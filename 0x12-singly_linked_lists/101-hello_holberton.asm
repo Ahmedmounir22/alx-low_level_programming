@@ -1,15 +1,11 @@
-section .data
-    msg db 'Hello, Holberton', 0
-    format db '%s', 10, 0
-
-section .text
-    global main
-    extern printf
+section		.text
+	extern  printf
+	global  main
 
 main:
-    push msg
-    push format
-    call printf
-    add rsp, 16  ; clean up the stack
-    xor eax, eax  ; return 0
-    ret
+	mov		edi, msg
+	mov		eax, 0
+	call   printf
+
+section		.data
+	msg db 'Hello, Holberton', 0xa, 0
