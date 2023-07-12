@@ -6,7 +6,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <sys/types.h>
+#include <sys/stat.h>
 #define READ_BUF_SIZE 1024
 
 int _putchar(char c);
